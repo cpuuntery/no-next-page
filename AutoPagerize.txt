@@ -1,0 +1,43 @@
+{
+  "showStatus": true,
+  "darkTheme": false,
+  "requestInterval": 2,
+  "unloadAfter": 1,
+  "rules": [
+    {
+      "url": "https://mangadex.org/thread/",
+      "pageElement": "//*[contains(@class, 'table')]/tbody",
+      "nextLink": "//a[preceding::li[@class=\"page-item active\"]]"
+    },
+    {
+      "url": "https://anidb.net/",
+      "pageElement": "//*[contains(@class, 'nowrap')]",
+      "nextLink": "//*[contains(@class, 'g_datatable')]/ul[2]/li[2]/a"
+    },
+    {
+      "url": "https://safebooru.donmai.us/",
+      "pageElement": "//*[@id='posts']",
+      "nextLink": "//a[contains(@*,'next')]"
+    },
+    {
+      "url": "https://myanimelist.net/",
+      "pageElement": "//*[contains(@class, 'js-scrollfix-bottom-rel')]",
+      "nextLink": "//a[text()='More Reviews']"
+    },
+    {
+      "url": "https://www.webtoons.com/",
+      "pageElement": "//div[@id='_imageList']",
+      "nextLink": "//a[@title='Next Episode']"
+    }
+  ],
+  "genericRulesEnabled": false,
+  "genericSites": [
+    "*"
+  ],
+  "exclusions": [
+    ""
+  ],
+  "pageHeightThreshold": 500,
+  "statusStyle": "",
+  "statusStyleError": ""
+}

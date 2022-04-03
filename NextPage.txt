@@ -1,0 +1,15 @@
+url https://comic.naver.com
+pageElement //*[contains(@class, 'viewList')]/tbody
+nextLink //a[@class='next']
+
+url https://www.fanfiction.net
+pageElement //*[contains(@class, 'table-bordered')]
+nextLink //a[text()='Next »']
+
+url https://archiveofourown.org/
+pageElement //ol[@class='work index group']
+nextLink //a[text()='Next →']
+
+url https://www.webtoons.com/
+pageElement //div[@id='_imageList']
+nextLink //a[@title='Next Episode']
