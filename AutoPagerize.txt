@@ -15,7 +15,7 @@
       "nextLink": "//*[contains(@class, 'g_datatable')]/ul[2]/li[2]/a"
     },
     {
-      "url": "https://safebooru.donmai.us/",
+      "url": "https://*.donmai.us/",
       "pageElement": "//*[@id='posts']",
       "nextLink": "//a[contains(@*,'next')]"
     },
@@ -28,6 +28,31 @@
       "url": "https://www.webtoons.com/",
       "pageElement": "//div[@id='_imageList']",
       "nextLink": "//a[@title='Next Episode']"
+    },
+    {
+      "url": "https://danbooru.donmai.us/",
+      "pageElement": "//*[contains(@class, 'list-of-forum-posts')]",
+      "nextLink": "//a[@rel='next']"
+    },
+    {
+      "url": "https://yande.re/",
+      "pageElement": "//div[@id='content']",
+      "nextLink": "//a[text()='Next →']"
+    },
+    {
+      "url": "https://archiveofourown.org/",
+      "pageElement": "//*[@id='main']",
+      "nextLink": "//a[preceding::ol[@class='work index group']][text()='Next →']"
+    },
+    {
+      "url": "https://btdig.com/",
+      "pageElement": "//div[contains(@style, \"display:table;width:100%;text-align:left\")]",
+      "nextLink": "//a[preceding::div[contains(@style, \"display:table;width:100%;text-align:left\")]][text()='Next →']"
+    },
+    {
+      "url": "https://myanimelist.net/forum/",
+      "pageElement": "//div[contains(@class, 'messages')]",
+      "nextLink": "//a[text()='»'][preceding::div[contains(@class, 'messages')]][following::h2[text()='More topics from this board']]"
     }
   ],
   "genericRulesEnabled": false,
@@ -37,7 +62,7 @@
   "exclusions": [
     ""
   ],
-  "pageHeightThreshold": 500,
+  "pageHeightThreshold": 250,
   "statusStyle": "",
   "statusStyleError": ""
 }
